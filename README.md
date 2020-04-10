@@ -1,3 +1,34 @@
+# Back-end
+
+## Comandos
+- yarn init -y
+- yarn add express
+
+# Front-end
+
+## Comandos
+
+- mkdir frontend
+- cd frontend
+- yarn init -y
+- mkdir src
+- mkdir public
+- yarn add react react-dom
+- yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli
+- yarn add @babel/cli
+- yarn babel src/index.js --out-file public/bundle.js
+- yarn add babel-loader
+- yarn webpack --mode development //converter aquivos
+- yarn add webpack-dev-server -D
+- yarn webpack-dev-server --mode development
+
+- yarn add style-loader css-loader
+- yarn add file-loader
+
+- yarn add axios
+- yarn add cors (backend)
+
+- yarn add @babel/plugin-transform-runtime -D
 # Conceitos
 
 ## Rota / recurso
@@ -21,7 +52,41 @@
 ## Middleware:
 - Interceptador de requisições que interrope totalmente a requisição ou alterar dados da requisição.
 
+## [Babel](https://babeljs.io/)
 
+- Converter (transpilar código do React para um código que o browser entenda
+
+## Webpack
+
+- Pra cada tipo de arquivo (.js, .css, .png) eu vou converter o código de uma maneira diferente
+
+### Loaders
+- babel-loader
+- css-loader
+- image-loader
+
+## React
+### JSX
+- HTML dentro do JavaScript (Javascript XML)
+
+### Fragment
+- formato <>
+- não reproduz nenhum efeito visual
+
+### Componente
+- "< Componente />"
+### Propriedade
+- passar variaveis no componente
+- props.children: são codigos html entre o componente
+### Estado & Imutabilidade
+- [projects, setProjects] = useState retorna um array com 2 posições
+    1. Variável com o seu valor inicial
+    2. Função para atualizarmos esse valor
+- Nunca alterar o valor da variavel diretamente (imutabilidade)
+- useEffect 
+    1. dispara funções sempre que tiver uma informação alterada.
+    2. parametro 1 função a ser disparada.
+    3. parametro 2 quais variaveis será alterada para disparar a função acima.
 ## Banco de dados
 - SQL: MySQL, SQLite, PostgreSQL, ORACLE, Microsoft SQL Server
 - NoSQL: MongoDB, CouchDB, etc
