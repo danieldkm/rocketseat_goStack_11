@@ -138,6 +138,24 @@ Por que não vamos utilizar o Expo?
 - Várias bibliotecas não tem suporte para o Expo
 - O Expo liberou seu conjunto de ferramentas prontas para serem utilizadas com projetos que não utilizam Expo
 
+## TypeScript
+
+- Por que TypeScript
+    - Desafio: Incluir a informação da cidade de UF do usuário nesse retorno.
+        - Qual o formato do objeto de usuário?
+        - Utilizo user.city ou user.address.city?
+        - Será que a cidade e UF são obrigatórias?
+- IntelliSense
+    - O editor não conhece o formato da variável user e, por isso, não consegue determinar suas propriedades.
+    - Nesse caso. o editor consegue saber exatamente os dados que um usuário pode ter e oferecer inteligência de IDE.
+- Mitos e verdades
+    - TypeScript diminui a "produtividade" (verdade em curto prazo)
+    - TypeScript é transformar JavaScript em Java ou C# (Mito)
+    - O mercado não usa TypeScript (Mito) 
+    - TypeScript substitui o JavaScript por completo (Mito)
+    - TypeScript atrapalha quem é iniciante (Verdade depende de cada individuo)
+    
+ 
 ## Banco de dados
 - SQL: MySQL, SQLite, PostgreSQL, ORACLE, Microsoft SQL Server
 - NoSQL: MongoDB, CouchDB, etc
