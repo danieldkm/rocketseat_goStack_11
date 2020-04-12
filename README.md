@@ -35,6 +35,14 @@
 - react-native init mobile
 - react-native run android
 
+### TypeScript
+- yarn add typescript -D
+- yarn add express
+- yarn add -D @types/express
+- yarn tsc .\src\index.ts //converter TS para JS
+- yarn tsc --init
+- yarn tsc
+
 # Links
 [Configurar React Native by RocketSeat](https://react-native.rocketseat.dev/)
 
@@ -154,7 +162,9 @@ Por que não vamos utilizar o Expo?
     - O mercado não usa TypeScript (Mito) 
     - TypeScript substitui o JavaScript por completo (Mito)
     - TypeScript atrapalha quem é iniciante (Verdade depende de cada individuo)
-    
+- Sintaxe
+    - Types: string, number, boolean, object, array
+    - interfaces
  
 ## Banco de dados
 - SQL: MySQL, SQLite, PostgreSQL, ORACLE, Microsoft SQL Server
