@@ -139,3 +139,31 @@ No arquivo tsconfig.json alterar
 ## ORM - Object Relational Mapping
 - [Sequelize](https://sequelize.org/) - Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server
 - [TypeORM](https://typeorm.io/#/) - para typescript (supports MySQL / MariaDB / Postgres / CockroachDB / SQLite / Microsoft SQL Server / Oracle / SAP Hana / sql.js, supports MongoDB NoSQL database)
+
+# Docker
+- Crição de ambientes isolados (container);
+- Containers expõe portas para comunicação;
+
+## Conceitos
+- Imagem: Serviço disponível
+- Container: Instancia da imagem
+- Docker Registry (Docker Hub)
+- Dockerfile
+  - Receita de uma imagem;
+ ```javascript
+ # Partimos de uma imagem existente
+ FROM node:10
+ 
+ # Definimos as pasta e copiamos os arquivos
+ WORKDIR /usr/app
+ COPY . ./
+ 
+ # Instalamos as dependências
+ RUN yarn
+ 
+ # Qual porta queremos export?
+ EXPOSE 3333
+ 
+ # Executamos nossa aplicação
+ CMD yarn start
+ ```
