@@ -129,3 +129,13 @@ No arquivo tsconfig.json alterar
 
 ## Dependency Inversion (SOLID)
 - 
+
+# Banco de dados
+
+## Driver for node - SQL query builder
+- [node-postgres](https://node-postgres.com/) - Postgres
+- [Knex](http://knexjs.org/) - Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift
+
+## ORM - Object Relational Mapping
+- [Sequelize](https://sequelize.org/) - Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server
+- [TypeORM](https://typeorm.io/#/) - para typescript (supports MySQL / MariaDB / Postgres / CockroachDB / SQLite / Microsoft SQL Server / Oracle / SAP Hana / sql.js, supports MongoDB NoSQL database)
