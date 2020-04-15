@@ -139,6 +139,9 @@ No arquivo tsconfig.json alterar
 ## ORM - Object Relational Mapping
 - [Sequelize](https://sequelize.org/) - Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server
 - [TypeORM](https://typeorm.io/#/) - para typescript (supports MySQL / MariaDB / Postgres / CockroachDB / SQLite / Microsoft SQL Server / Oracle / SAP Hana / sql.js, supports MongoDB NoSQL database)
+## IDE
+-[dbeaver](https://dbeaver.io/)
+-[Postbird](https://www.electronjs.org/apps/postbird)
 
 # Docker
 - Crição de ambientes isolados (container);
@@ -175,6 +178,7 @@ No arquivo tsconfig.json alterar
     - "-d": ultima versão, com versão "-d postgres:12";
   - docker ps: exibe todos as instancias
     - "-a" : exibe todos os containers que ja esteve rodando
+  - docker stop "CONTAINER ID" : deleta uma instancia no container
 
   - Show ports: Linux;
 ``` 
