@@ -171,15 +171,11 @@ No arquivo tsconfig.json alterar
 ```
 docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 
 ```
-  - Show ports
-    - Linux
-    
-```
+  - Show ports: Linux
+``` 
 lsof -i :5432
 ```
-    
-   - Windows
-
+  - Show ports: Windows
 ```
 Get-Process -Id (Get-NetTCPConnection -LocalPort 5432).OwningProcess
 ```
