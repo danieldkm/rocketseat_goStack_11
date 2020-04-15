@@ -140,8 +140,8 @@ No arquivo tsconfig.json alterar
 - [Sequelize](https://sequelize.org/) - Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server
 - [TypeORM](https://typeorm.io/#/) - para typescript (supports MySQL / MariaDB / Postgres / CockroachDB / SQLite / Microsoft SQL Server / Oracle / SAP Hana / sql.js, supports MongoDB NoSQL database)
 ## IDE
--[dbeaver](https://dbeaver.io/)
--[Postbird](https://www.electronjs.org/apps/postbird)
+- [dbeaver](https://dbeaver.io/)
+- [Postbird](https://www.electronjs.org/apps/postbird)
 
 # Docker
 - Crição de ambientes isolados (container);
