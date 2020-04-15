@@ -19,6 +19,9 @@ Nível 02 do curso GoStack 11
 - yarn add -D eslint-import-resolver-typescript
 - yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 
+- yarn add uuidv4
+- yarn add date-fns
+
 ### Configurações
 
 No arquivo tsconfig.json alterar
@@ -103,3 +106,26 @@ No arquivo tsconfig.json alterar
   ]
 }
 ```
+
+# Coneceitos
+
+## Models / Entidades / Modelo
+
+## Repository
+- Persistência <-> Repositório <-> Rota
+- find, create
+
+## SoC: Separation of Concerns (Separação de preocupações)
+- Rota: receber a requisição, chamar outro arquivo, devolver um resposta.
+
+## DTO: Data Transfer Object
+- Transmitir dados de um arquivo para outro por meio de Objeto de preferencia
+
+## Services
+
+## SOLID
+- S: Single Reponsability Principle
+- D: Dependency Invertion Principle
+
+## Dependency Inversion (SOLID)
+- 
