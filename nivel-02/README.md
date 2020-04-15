@@ -168,14 +168,19 @@ No arquivo tsconfig.json alterar
  CMD yarn start
  ```
 - Commands;
-```
-docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 
-```
-  - Show ports: Linux
+  
+  - docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+    
+    - "-p": se a porta 5432 ja estiver sendo utilizda, podemos alterar a porta do postgres, exemplo (porta externa:porta interna do docker) "5433:5432";
+    - "-d": ultima versão, com versão "-d postgres:12";
+  - docker ps: exibe todos as instancias
+    - "-a" : exibe todos os containers que ja esteve rodando
+
+  - Show ports: Linux;
 ``` 
 lsof -i :5432
 ```
-  - Show ports: Windows
+  - Show ports: Windows;
 ```
 Get-Process -Id (Get-NetTCPConnection -LocalPort 5432).OwningProcess
 ```
