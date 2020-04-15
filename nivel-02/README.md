@@ -150,7 +150,7 @@ No arquivo tsconfig.json alterar
 - Docker Registry (Docker Hub)
 - Dockerfile
   - Receita de uma imagem;
- ```javascript
+ ```yaml
  # Partimos de uma imagem existente
  FROM node:10
  
