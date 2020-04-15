@@ -167,3 +167,11 @@ No arquivo tsconfig.json alterar
  # Executamos nossa aplicação
  CMD yarn start
  ```
+- Commands;
+```cmd
+docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 
+```
+  - Show ports
+  ```cmd
+lsof -i :5432
+  ```
