@@ -21,6 +21,9 @@ Nível 02 do curso GoStack 11
 
 - yarn add uuidv4
 - yarn add date-fns
+---Banco de dados
+- yarn add typeorm pg
+- yarn add reflect-metadata
 
 ### Configurações
 
@@ -143,6 +146,24 @@ No arquivo tsconfig.json alterar
 - [dbeaver](https://dbeaver.io/)
 - [Postbird](https://www.electronjs.org/apps/postbird)
 
+# TypeORM
+- yarn add typeorn 
+- yarn add reflect-metadata
+- Por padrão ja executa em javascript
+  - deve configurar caso utilize typescript em package.json add no script;
+    - "typeorm" : "ts-node-dev ./node_modules/typeorm/cli.js"
+    - comandos;
+      - yarn typeorm migration:create -n "nome da migration"
+      - yarn typeorm migration:run
+      - yarn typeorm migration:revert
+      - yarn typeorm migration:show
+- Em tsconfig.json descomentes as seguintes linhas
+```
+"experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
+"emitDecoratorMetadata": true,         /* Enables experimental support for emitting type  metadata for decorators. */
+"strictPropertyInitialization": false, /* Enable strict checking of property initialization in classes. */
+```
+
 # Docker
 - Crição de ambientes isolados (container);
 - Containers expõe portas para comunicação;
@@ -183,6 +204,7 @@ No arquivo tsconfig.json alterar
   - Show ports: Linux;
 ``` 
 lsof -i :5432
+sudo lsof -i -P -n | grep LISTEN
 ```
   - Show ports: Windows;
 ```
