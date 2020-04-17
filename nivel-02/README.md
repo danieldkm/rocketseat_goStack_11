@@ -33,6 +33,8 @@ Nível 02 do curso GoStack 11
 ---Upload de imagens
 - yarn add multer
 - yarn add @types/multer
+---Handler errors
+- yarn add express-async-errors
 
 
 ### Configurações
