@@ -24,6 +24,16 @@ Nível 02 do curso GoStack 11
 ---Banco de dados
 - yarn add typeorm pg
 - yarn add reflect-metadata
+---Criptografia
+- yarn add bcryptjs
+- yarn add -D @types/bcryptjs
+---Autenticação
+- yarn add jsonwebtoken
+- yarn add @types/jsonwebtoken
+---Upload de imagens
+- yarn add multer
+- yarn add @types/multer
+
 
 ### Configurações
 
