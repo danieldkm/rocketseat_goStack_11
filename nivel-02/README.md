@@ -36,6 +36,10 @@ Nível 02 do curso GoStack 11
 ---Handler errors
 - yarn add express-async-errors
 
+---Primeiro Projeto React
+- npm install -g create-react-app
+- create-react-app primeiro-projeto-react --template=typescript
+
 
 ### Configurações
 
