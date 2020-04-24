@@ -61,6 +61,13 @@ Done in 22.34s.
 - yarn add eslint-plugin-react@^7.19.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint-plugin-import@^2.20.1 eslint-plugin-jsx-a11y@^6.2.3 eslint-plugin-react-hooks@^2.5.0 @typescript-eslint/parser@latest -D
 - yarn add eslint-import-resolver-typescript -D
 - yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+- yarn add react-router-dom
+- yarn add @types/react-router-dom -D
+- yarn add styled-components
+- yarn add @types/styled-components -D
+- yarn add polished
+- yarn add react-icons
+- yarn add axios
 
 ### Configurações
 
@@ -169,6 +176,29 @@ No arquivo tsconfig.json alterar
 
 ## Dependency Inversion (SOLID)
 - 
+
+## React
+- Criar componentes quando houver mais de 2 niveis exemplo
+```html
+<Componente1>
+  <div>1
+    <div>2
+      <div>3
+      </div>
+    </div>
+  </div>
+</Componente1>
+```
+```html
+<Componente1>
+  <Componente2>
+    <div>
+      <div>
+      </div>
+    </div>
+  </Componente2>
+</Componente1>
+```
 
 # Banco de dados
 
