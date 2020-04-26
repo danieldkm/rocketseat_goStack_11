@@ -7,6 +7,10 @@ Nível 03 do curso GoStack 11
 -- Deal with form
 - yarn add @unform/core @unform/web
 
+-- Lib de validação dos campos
+- yarn add yup
+- yarn add @types/yup -D
+
 # Conselhos
 ## Leis dentro do react
 - Sempre que criar uma função dentro de um componente, não criar dentro dela diretamente,
