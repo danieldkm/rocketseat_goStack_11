@@ -11,6 +11,11 @@ Nível 03 do curso GoStack 11
 - yarn add yup
 - yarn add @types/yup -D
 
+-- iniciando-back-end
+- yarn add cors
+
+
+
 # Conselhos
 ## Leis dentro do react
 - Sempre que criar uma função dentro de um componente, não criar dentro dela diretamente,
