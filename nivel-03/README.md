@@ -17,6 +17,9 @@ Nível 03 do curso GoStack 11
 -- deal with ids
 - yarn add uuidv4
 
+-- pacote de animação no react
+- [react-spring](https://www.react-spring.io/)
+
 # Conselhos
 ## Leis dentro do react
 - Sempre que criar uma função dentro de um componente, não criar dentro dela diretamente,
