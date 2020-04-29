@@ -19,6 +19,11 @@ Nível 03 do curso GoStack 11
 
 -- pacote de animação no react
 - [react-spring](https://www.react-spring.io/)
+- yarn add react-spring
+
+-- rotas
+- yarn add react-router-dom
+- yarn add -D @types/react-router-dom
 
 # Conselhos
 ## Leis dentro do react
