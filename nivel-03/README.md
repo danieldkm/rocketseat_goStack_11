@@ -14,7 +14,8 @@ Nível 03 do curso GoStack 11
 -- iniciando-back-end
 - yarn add cors
 
-
+-- deal with ids
+- yarn add uuidv4
 
 # Conselhos
 ## Leis dentro do react
