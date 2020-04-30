@@ -37,6 +37,11 @@
 * [Instruções para começar](#instruções-para-começar)
   * [Pré-requisitos](#pré-requisitos)
   * [Instalação](#instalação)
+* [Doc Nível 1](https://github.com/danieldkm/rocketseat_goStack_11/tree/master/nivel-01)
+* [Doc Nível 2](https://github.com/danieldkm/rocketseat_goStack_11/tree/master/nivel-02)
+* [Doc Nível 3](https://github.com/danieldkm/rocketseat_goStack_11/tree/master/nivel-03)
+* [Licença](#licença)
+* [Contato](#contato)
 
 
 <!-- ABOUT THE PROJECT -->
@@ -116,7 +121,7 @@ Daniel K. Morita - [@DneelDKM](https://twitter.com/DneelKM) - danielmorita@hotma
 [issues-shield]: https://img.shields.io/github/issues/danieldkm/rocketseat_goStack_11.svg?style=flat-square
 [issues-url]: https://github.com/danieldkm/rocketseat_goStack_11/issues
 [license-shield]: https://img.shields.io/github/license/danieldkm/rocketseat_goStack_11.svg?style=flat-square
-[license-url]: https://github.com/danieldkm/rocketseat_goStack_11/blob/master/LICENSE.txt
+[license-url]: https://github.com/danieldkm/rocketseat_goStack_11/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/daniel-k-morita-7b928831
 [product-screenshot]: images/screenshot.png
