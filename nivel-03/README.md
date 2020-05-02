@@ -79,6 +79,24 @@ Run instructions for Android:
 -- adicao de fonts
 - npx react-native link / yarn react-native link
 
+-- add icons
+- yarn add react-native-vector-icons
+  - se estiver no ios rodar o comando;
+    - pod install
+    - acessar a pasta ios e editar o arquivo Info.plist
+      - adicionar na tag onde foi adicionada as fonts o feather
+```xml
+<string>Feather.ttf</string>
+```
+  - se estiver no android
+    - acessar a pasta e editar arquivo: android/app/build.gradle, adicionar no final deste;
+```gradle
+project.ext.vectoricons = [
+  iconsFontNames: ['Feather.ttf']
+]
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+```
+- yarn add -D @types/react-native-vector-icons
 # Conselhos
 ## Leis dentro do react
 - Sempre que criar uma função dentro de um componente, não criar dentro dela diretamente,
