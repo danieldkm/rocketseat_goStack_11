@@ -65,7 +65,17 @@ Run instructions for Android:
 - yarn add eslint-import-resolver-typescript -D
 - copiar os arquivos de eslint do projeto anterior ("gobarber-web")
 - remover "browser": true, do arquivo de configuração do eslint, pois o projeto não irá rodar no browser.
-
+- yarn add styled-components
+- yarn add -D @types/styled-components
+- entre no site do react-navigation
+- yarn add @react-navigation/native
+- se for usar o expo copiar o codigo para ele
+- yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+- se estiver usando macos ios:
+  - instalar o cocoapods (equivalente ao yarn ou npm para ios)
+  - acessar a past "ios" no projeto
+  - rodar o comando pod install
+- yarn add @react-navigation/stack
 # Conselhos
 ## Leis dentro do react
 - Sempre que criar uma função dentro de um componente, não criar dentro dela diretamente,
