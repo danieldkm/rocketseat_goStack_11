@@ -97,6 +97,8 @@ project.ext.vectoricons = [
 apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 ```
 - yarn add -D @types/react-native-vector-icons
+-- Identificar a versao do iphone
+- yarn add react-native-iphone-x-helper
 # Conselhos
 ## Leis dentro do react
 - Sempre que criar uma função dentro de um componente, não criar dentro dela diretamente,
