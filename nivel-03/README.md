@@ -76,6 +76,9 @@ Run instructions for Android:
   - acessar a past "ios" no projeto
   - rodar o comando pod install
 - yarn add @react-navigation/stack
+-- adicao de fonts
+- npx react-native link / yarn react-native link
+
 # Conselhos
 ## Leis dentro do react
 - Sempre que criar uma função dentro de um componente, não criar dentro dela diretamente,
