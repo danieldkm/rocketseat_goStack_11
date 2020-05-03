@@ -14,11 +14,11 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-<!-- PROJECT LOGO -->
+<!-- PROJECT LOGO https://user-images.githubusercontent.com/11061074/80661538-5627cb80-8a65-11ea-8d3f-8a9e77c0e726.png-->
 <br />
 <p align="center">
   <a href="https://rocketseat.com.br/">
-    <img src="https://user-images.githubusercontent.com/11061074/80661538-5627cb80-8a65-11ea-8d3f-8a9e77c0e726.png" alt="Logo">
+    <img src="banner.png" alt="Logo">
   </a>
 
   <h3 align="center">GoStack 11</h3>
