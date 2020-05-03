@@ -104,6 +104,7 @@ apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 - validation error
   - yarn add yup
   - yarn add @types/yup -D
+- yarn add axios
 # Conselhos
 ## Leis dentro do react
 - Sempre que criar uma função dentro de um componente, não criar dentro dela diretamente,
