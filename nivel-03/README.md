@@ -101,6 +101,9 @@ apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 - yarn add react-native-iphone-x-helper
 
 - yarn add @unform/core @unform/mobile
+- validation error
+  - yarn add yup
+  - yarn add @types/yup -D
 # Conselhos
 ## Leis dentro do react
 - Sempre que criar uma função dentro de um componente, não criar dentro dela diretamente,
