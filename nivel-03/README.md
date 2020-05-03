@@ -105,6 +105,9 @@ apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
   - yarn add yup
   - yarn add @types/yup -D
 - yarn add axios
+- Banco asyncrono que geralmente usa SQLite
+  - yarn add @react-native-community/async-storage
+  - caso esteja no ios, rodar o comando "pod install" na pasta "ios"
 # Conselhos
 ## Leis dentro do react
 - Sempre que criar uma função dentro de um componente, não criar dentro dela diretamente,
