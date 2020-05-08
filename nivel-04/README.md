@@ -110,7 +110,7 @@ yarn add tsconfig-paths -D
   - sempre que precisar tipar uma informação composta para criar, deletar, listar, atualizar, etc, que pode se repetir, cria se o dto
   - quais dados é necessário para criação de uma entidade
 
-## Dependency Inversion Principle
+## Dependency Inversion Principle (S O L I **D**)
 - Inversão de dependencia
 - Ao invez do service precisar saber qual o formato do repositorio, fazendo com que a classe que precise do repositorio informar qual quer
 - desabilitar a regra "no-useless" no eslint
@@ -119,5 +119,6 @@ yarn add tsconfig-paths -D
   "no-useless-constructor": "off",
 }
 ```
-
+## Refatorando módulo de usuários
+- ajuste no ormconfig, pois mudou o arquivos de diretorio
 
