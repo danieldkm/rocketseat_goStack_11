@@ -244,3 +244,19 @@ yarn add ts-jest -D
 
 ## Criando o primeiro teste
 - criar repositorios fakes
+
+## Coverage report
+- ferramenta de cobertura de testes
+
+- Em jest.config.js, descomentar e alterar as linhas
+```javascript
+module.exports = {
+  collectCoverage: true,
+  collectCoverageFrom: ['<rootDir>/src/modules/**/services/*.ts'],
+  coverageDirectory: "coverage",
+  coverageReporters: [
+    "text-summary",
+    "lcov",
+  ],
+}
+```
