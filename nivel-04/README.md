@@ -123,8 +123,11 @@ yarn add tsconfig-paths -D
 - ajuste no ormconfig, pois mudou o arquivos de diretorio
 
 ## Injeção de dependências
-- instalar lib para isso xD
-- yarn add tsyringe
+
+```sh
+yarn add tsyringe
+```
+- tsyringe
   - register: instancia toda vez que é chamado
   - registerSingleton: instancia uma unica vez
 - termo "container" nesse caso é ele que controla a injestão das dependencias, nas services
@@ -171,3 +174,59 @@ yarn add tsconfig-paths -D
 - Cria os testes antes de criar as funcionalidades na aplicação
 - Exemplos:
   - Quando ele se cadastrar na aplicação, ele deve receber um email de boas-vindas;
+
+## Configurando Jest
+```sh
+yarn add jest -D
+```
+```sh
+yarn jest --init
+```
+```sh
+yarn run v1.22.4
+$ C:\Users\danie\Documents\GoStack11\rocketseat_goStack_11\nivel-04\iniciando-back-end\node_modules\.bin\jest --init
+
+The following questions will help Jest to create a suitable configuration for your project
+
+√ Would you like to use Jest when running "test" script in "package.json"? ... yes
+√ Choose the test environment that will be used for testing » node
+√ Do you want Jest to add coverage reports? ... no
+√ Automatically clear mock calls and instances between every test? ... yes
+
+✏️  Modified C:\Users\danie\Documents\GoStack11\rocketseat_goStack_11\nivel-04\iniciando-back-end\package.json
+
+�📝  Configuration file created at C:\Users\danie\Documents\GoStack11\rocketseat_goStack_11\nivel-04\iniciando-back-end\jest.config.js
+Done in 33.22s.
+```
+- Em jest.config.js, descomentar e alterar as linhas
+```javascript
+module.exports = {
+  preset: 'ts-jest',
+  testMatch: [
+    "**/*.spec.ts",
+  ],
+}
+```
+
+```sh
+yarn add @types/jest -D
+```
+- no arquivo do .eslintrc.json, adicionar o jest para o lint saber que o jest tem variaveis globais.
+
+```json
+"env": {
+  "jest": true
+}
+```
+- Caso ocorrer erros no config do jest como, o erro ocorreu quando adicionei no preset: 'ts-jest'
+```sh
+Validation Error:
+
+
+  The "id" argument must be of type string. Received type object
+  TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type string. Received type object
+```
+  - instale
+```sh
+yarn add ts-jest -D
+```
