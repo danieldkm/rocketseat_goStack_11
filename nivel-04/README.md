@@ -218,7 +218,10 @@ yarn add @types/jest -D
   "jest": true
 }
 ```
-- Caso ocorrer erros no config do jest como, o erro ocorreu quando adicionei no preset: 'ts-jest'
+- <span style="color: red">Caso ocorrer erros no config do jest como, o erro ocorreu quando adicionei no preset: 'ts-jest'
+</span>
+
+
 ```sh
 Validation Error:
 
@@ -230,3 +233,5 @@ Validation Error:
 ```sh
 yarn add ts-jest -D
 ```
+
+## Pensando nos testes
