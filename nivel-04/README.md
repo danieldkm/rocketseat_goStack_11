@@ -1,9 +1,11 @@
-
+<p align="center">
+  <h1 align="center">Nível 04</h1>
+</p>
 
 <p align="center">
   <h1 align="center">Arquitetura e testes no Node.js</h1>
   <p align="center">
-    <strong>Treinamento imersivo:</strong> Nível 04 do curso GoStack 11
+    Nessa etapa, continuaremos o projeto iniciado anteriormente adicionando pontos cruciais de arquitetura, design patterns e testes automatizados. 
     <br />
   </p>
 </p>
@@ -273,3 +275,28 @@ module.exports = {
 ## Atualização de Avatar
 - jest 
   - spy - espionar se alguma função da aplicação foi disparada.
+<br>
+<br>
+<hr>
+
+<p align="center">
+  <h1 align="center">Continuando back-end do app</h1>
+  <p align="center">
+    Durante esse módulo iremos aprender conceitos mais complexos do back-end da aplicação como relacionamentos complexos, trabalhos em segundo plano, cache, bancos de dados não-relacionais e segurança.
+    <br />
+  </p>
+</p>
+
+# Estrutura e Ajustes
+
+## Mapeando features do sistema
+
+### [Mapeamento de requisitos](./iniciando-back-end/README.md)
+- RF: Requisitos funcionais
+  - quais são as funcionalidades
+  - usuário vai poder fazer algo (recuperar senha por exemplo)
+- RNF: Requisitos não funcionais
+  - Coisas que não são ligadas com a regras de negocios da aplicação
+  - quais libs, frameworks, tecnologias, database, etc
+- RN: Regra de negocios
+  - sempre tem que estar atrelada ao RF ou RNF se não esta errado.
