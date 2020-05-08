@@ -270,3 +270,6 @@ module.exports = {
   - Google Cloud Storage
   - Digital Ocean Spaces
   - Azure Storage Account
+## Atualização de Avatar
+- jest 
+  - spy - espionar se alguma função da aplicação foi disparada.
