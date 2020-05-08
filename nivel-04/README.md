@@ -319,3 +319,8 @@ yarn test src/modules/users/services/SendForgotPasswordEmailService.spec.ts
 ## Recuperação de senha
 - para resetar a senha
   - Identificar o usuário, enviando um token para validar o reset de senha.
+
+## Reset de senha
+```sh
+ yarn test src/modules/users/services/ResetPasswordService.spec.ts 
+```
