@@ -265,3 +265,8 @@ module.exports = {
 ## Testando autenticação
 ## Testes de autenticação
 ## Provider de storage
+- tipos de CDN (Content Delivery Network)
+  - Amazon S3
+  - Google Cloud Storage
+  - Digital Ocean Spaces
+  - Azure Storage Account
