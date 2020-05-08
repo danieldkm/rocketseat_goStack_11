@@ -200,7 +200,13 @@ Done in 33.22s.
 ```
 - Em jest.config.js, descomentar e alterar as linhas
 ```javascript
+const { pathsToModuleNameMapper } = require('ts-jest/utils');
+const {compilerOptions} = require('./tsconfig.json');
+
 module.exports = {
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+    prefix: '<rootDir>/src/'
+  }),
   preset: 'ts-jest',
   testMatch: [
     "**/*.spec.ts",
@@ -235,3 +241,6 @@ yarn add ts-jest -D
 ```
 
 ## Pensando nos testes
+
+## Criando o primeiro teste
+- criar repositorios fakes
