@@ -122,3 +122,9 @@ yarn add tsconfig-paths -D
 ## Refatorando módulo de usuários
 - ajuste no ormconfig, pois mudou o arquivos de diretorio
 
+## Injeção de dependências
+- instalar lib para isso xD
+- yarn add tsyringe
+  - register: instancia toda vez que é chamado
+  - registerSingleton: instancia uma unica vez
+- termo "container" nesse caso é ele que controla a injestão das dependencias, nas services
