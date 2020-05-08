@@ -109,3 +109,15 @@ yarn add tsconfig-paths -D
 - dtos: data transfer objects
   - sempre que precisar tipar uma informação composta para criar, deletar, listar, atualizar, etc, que pode se repetir, cria se o dto
   - quais dados é necessário para criação de uma entidade
+
+## Dependency Inversion Principle
+- Inversão de dependencia
+- Ao invez do service precisar saber qual o formato do repositorio, fazendo com que a classe que precise do repositorio informar qual quer
+- desabilitar a regra "no-useless" no eslint
+```json
+"rules" {
+  "no-useless-constructor": "off",
+}
+```
+
+
