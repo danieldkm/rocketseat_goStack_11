@@ -76,8 +76,7 @@ Run instructions for Android:
   - acessar a past "ios" no projeto
   - rodar o comando pod install
 - yarn add @react-navigation/stack
--- adicao de fonts
-- npx react-native link / yarn react-native link
+
 
 -- add icons
 - yarn add react-native-vector-icons
@@ -108,6 +107,26 @@ apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 - Banco asyncrono que geralmente usa SQLite
   - yarn add @react-native-community/async-storage
   - caso esteja no ios, rodar o comando "pod install" na pasta "ios"
+
+# adicionar fontes externas
+
+- criar um arquivo com o nome de react-native.config.js
+```
+module.exports = {
+  project: {
+    ios: {},
+    android: {}
+  },
+  assets: [
+    './assets/fonts'
+  ]
+}
+
+```
+- em seguida rodar comando abaixo
+  - npx react-native link / yarn react-native link
+
+
 # Conselhos
 ## Leis dentro do react
 - Sempre que criar uma função dentro de um componente, não criar dentro dela diretamente,
