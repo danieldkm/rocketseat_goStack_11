@@ -5,7 +5,7 @@ import AuthenticateUserService from './AuthenticateUserService';
 import CreateUserService from './CreateUserService';
 
 describe('AuthenticateUser', () => {
-  it('shourd be able to authenticate', async () => {
+  it('should be able to authenticate', async () => {
     const fakeUsersRepository = new FakeUsersRepository();
     const fakeHashProvider = new FakeHashProvider();
 
@@ -32,7 +32,7 @@ describe('AuthenticateUser', () => {
     expect(response).toHaveProperty('token');
     expect(response.user).toEqual(user);
   });
-  it('shourd not be able to authenticate with non existing uses', async () => {
+  it('should not be able to authenticate with non existing uses', async () => {
     const fakeUsersRepository = new FakeUsersRepository();
     const fakeHashProvider = new FakeHashProvider();
 
@@ -41,14 +41,14 @@ describe('AuthenticateUser', () => {
       fakeHashProvider,
     );
 
-    expect(
+    await expect(
       authenticateUser.execute({
         email: 'teste@teste.com.br',
         password: '123123',
       }),
     ).rejects.toBeInstanceOf(AppError);
   });
-  it('shourd not be able to authenticate with wrong password', async () => {
+  it('should not be able to authenticate with wrong password', async () => {
     const fakeUsersRepository = new FakeUsersRepository();
     const fakeHashProvider = new FakeHashProvider();
 
@@ -68,7 +68,7 @@ describe('AuthenticateUser', () => {
       password: '123123',
     });
 
-    expect(
+    await expect(
       authenticateUser.execute({
         email: 'teste@teste.com.br',
         password: 'wrong-password',

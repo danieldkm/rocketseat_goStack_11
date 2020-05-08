@@ -315,3 +315,7 @@ yarn test src/modules/users/services/SendForgotPasswordEmailService.spec.ts
   - RED
   - GREEN
   - REFACTOR
+
+## Recuperação de senha
+- para resetar a senha
+  - Identificar o usuário, enviando um token para validar o reset de senha.
