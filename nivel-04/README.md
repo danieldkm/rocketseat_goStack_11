@@ -300,3 +300,18 @@ module.exports = {
   - quais libs, frameworks, tecnologias, database, etc
 - RN: Regra de negocios
   - sempre tem que estar atrelada ao RF ou RNF se não esta errado.
+
+# Perfil do usuário
+
+## Aplicando TDD na prática
+
+- Criar a service primeiro bem simples quase vazio
+- é interessante deixar criado a servise para realizar os testes
+- Executar um arquivo especifico para teste
+```sh
+yarn test src/modules/users/services/SendForgotPasswordEmailService.spec.ts
+```
+- Primeiro o teste deve falhar, depois fazer passar e refatorar.
+  - RED
+  - GREEN
+  - REFACTOR
