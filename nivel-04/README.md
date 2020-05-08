@@ -132,3 +132,42 @@ yarn add tsconfig-paths -D
 ## Usando controllers
 - o controller deve ter no maximo 5 metodos
   - index, show, create, update, delete
+
+
+
+
+# Testes e TDD
+
+## Testes
+- testes automatizados
+- Que a nossa aplicação continue funcionando independente do número de novas funcionalidades e do número de devs no time.
+  
+***1. Testes unitários***
+
+- Testam funcionalidades específicas da nossa aplicação (precisam ser funções puras).
+- JAMAIS: Chamada à uma API, efeito colateral (envio de email, serviços externos).
+  
+***2. Testes de integração***
+
+- Testam uma funcionalidade completa, passando por várias camadas da aplicação.
+
+- Exemplo: chamada da Route -> Controller -> Serviço -> Repositório -> ...
+- Reliza o teste completo em um so teste
+
+***1. Testes E2E***
+
+- Testes que simulam a ação do usuário dentro da nossa aplicação.
+- Front-end
+- Exemplo:
+1. Clique no input de email
+2. Preencha teste@teste.com.br
+3. Clique no input de senha
+4. Preencha 123456
+5. Clique no botão "Logar"
+6. Espero que a página tenha enviado o usuário para o dashboard
+
+## TDD (Test Driven Development)
+- Desenvolvimento dirigito a testes
+- Cria os testes antes de criar as funcionalidades na aplicação
+- Exemplos:
+  - Quando ele se cadastrar na aplicação, ele deve receber um email de boas-vindas;
