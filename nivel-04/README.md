@@ -128,3 +128,7 @@ yarn add tsconfig-paths -D
   - register: instancia toda vez que é chamado
   - registerSingleton: instancia uma unica vez
 - termo "container" nesse caso é ele que controla a injestão das dependencias, nas services
+
+## Usando controllers
+- o controller deve ter no maximo 5 metodos
+  - index, show, create, update, delete
