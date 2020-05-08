@@ -103,3 +103,9 @@ yarn add tsconfig-paths -D
   "@typescrupt-eslint/interface-name-prefix": ["error", { "prefixWithI": "always"}]
 }
 ```
+
+## Reescrevendo Repositórios
+- ter controle dos metodos do nosso repositorio
+- dtos: data transfer objects
+  - sempre que precisar tipar uma informação composta para criar, deletar, listar, atualizar, etc, que pode se repetir, cria se o dto
+  - quais dados é necessário para criação de uma entidade
