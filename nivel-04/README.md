@@ -262,3 +262,4 @@ module.exports = {
 ```
 
 ## Testando criação de usuário
+## Testando autenticação
