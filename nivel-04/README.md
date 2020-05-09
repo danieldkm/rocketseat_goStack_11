@@ -324,3 +324,8 @@ yarn test src/modules/users/services/SendForgotPasswordEmailService.spec.ts
 ```sh
  yarn test src/modules/users/services/ResetPasswordService.spec.ts 
 ```
+
+## Finalizando testes
+- Mock: alem de espcionar consegue substituir o retorno, resposta, funcao etc
+  - mockImplementation: quando algum codigo executar a funcao, irá executar sua funcao no teste
+  - mockImplementationOnce: mesma coisa de cima mas irá mockar apenas uma vez no seu teste
