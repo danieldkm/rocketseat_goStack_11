@@ -342,3 +342,11 @@ yarn typeorm migration:create -n CreateUserTokens
 5. registrar providers no container
 6. Testar tudo
 
+## Emails em desenvolvimento
+4. Provider de envio de e-mail (DEV)
+- usando [ethereal](https://ethereal.email/)
+- dependecials
+```sh
+yarn add nodemailer
+yarn add @types/nodemailer -D
+```
