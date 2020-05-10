@@ -369,3 +369,6 @@ yarn add handlebars
 
 ## Refatoração dos testes
 - foi padronizado as chamadas dos providers e services em no beforeEach
+
+## Atualização do perfil
+- aplicando TDD
