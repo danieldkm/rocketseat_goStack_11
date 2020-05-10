@@ -399,3 +399,5 @@ yarn typeorm migration:run
 ```sh
 yarn jest --clearCache
 ```
+
+## Rotas e controllers
