@@ -375,3 +375,10 @@ yarn add handlebars
 
 ## Rota e controller de perfil
 - sempre que houver uma funcionalidade nova, iremos criar uma service
+
+
+# Agendamento
+- resolver as funcionalidades parte de agendamento
+- rotas, serviços, testes, controllers, modelos, tabelas, etc
+
+## Listagem de prestadores
