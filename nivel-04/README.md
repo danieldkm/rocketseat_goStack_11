@@ -364,3 +364,8 @@ yarn add handlebars
 ```
 
 ## Template engine
+- criação do arquivo de template na pasta views no users
+- foi utilizado o handlebars para o template
+
+## Refatoração dos testes
+- foi padronizado as chamadas dos providers e services em no beforeEach
