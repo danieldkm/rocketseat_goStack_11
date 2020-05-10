@@ -329,3 +329,16 @@ yarn test src/modules/users/services/SendForgotPasswordEmailService.spec.ts
 - Mock: alem de espcionar consegue substituir o retorno, resposta, funcao etc
   - mockImplementation: quando algum codigo executar a funcao, irá executar sua funcao no teste
   - mockImplementationOnce: mesma coisa de cima mas irá mockar apenas uma vez no seu teste
+
+## Salvando tokens no banco
+- Criação
+1. Rotas e controllers
+2. Repositório de tokens (TypeORM)
+3. Criar migrations de token
+```sh
+yarn typeorm migration:create -n CreateUserTokens
+```
+4. Provider de envio de e-mail (DEV)
+5. registrar providers no container
+6. Testar tudo
+
