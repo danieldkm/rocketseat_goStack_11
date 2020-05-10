@@ -1,14 +1,12 @@
 import { injectable, inject } from 'tsyringe';
 
-// import AppError from '@shared/errors/AppError';
-
 import AppError from '@shared/errors/AppError';
 import IHashProvider from '../providers/HashProvider/models/IHashProvider';
 import User from '../infra/typeorm/entities/User';
 
 import IUsersRepository from '../repositories/IUsersRepository';
 
-interface ITokenPayload {
+interface IRequest {
   user_id: string;
   name: string;
   email: string;
@@ -19,7 +17,7 @@ interface ITokenPayload {
 export default class UpdateProfileService {
   constructor(
     @inject('UsersRepository') private usersRepository: IUsersRepository,
-    @inject('hashProvider') private hashProvider: IHashProvider,
+    @inject('HashProvider') private hashProvider: IHashProvider,
   ) {}
 
   public async execute({
@@ -28,7 +26,7 @@ export default class UpdateProfileService {
     email,
     password,
     old_password,
-  }: ITokenPayload): Promise<User> {
+  }: IRequest): Promise<User> {
     const user = await this.usersRepository.findById(user_id);
 
     if (!user) {

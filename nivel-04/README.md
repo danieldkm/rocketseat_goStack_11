@@ -372,3 +372,6 @@ yarn add handlebars
 
 ## Atualização do perfil
 - aplicando TDD
+
+## Rota e controller de perfil
+- sempre que houver uma funcionalidade nova, iremos criar uma service
