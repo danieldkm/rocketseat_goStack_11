@@ -242,6 +242,10 @@ Validation Error:
 yarn add ts-jest -D
 ```
 
+- se tiver com erro no testes mesmo apos ter corrigido os testes, no jest tem um comando para limpar o cache dele
+```sh
+yarn jest --clearCache
+```
 ## Pensando nos testes
 
 ## Criando o primeiro teste
@@ -384,3 +388,14 @@ yarn add handlebars
 ## Listagem de prestadores
 ## Filtrando agendamentos por mês
 ## Listando horários disponíveis
+## Criação do agendamento
+- nova migration
+```sh
+yarn typeorm migration:create -n AddUserIdToAppointments
+#after modify file migration
+yarn typeorm migration:run
+```
+- se tiver com erro no testes mesmo apos ter corrigido os testes, no jest tem um comando para limpar o cache dele
+```sh
+yarn jest --clearCache
+```
