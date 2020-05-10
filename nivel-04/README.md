@@ -344,9 +344,21 @@ yarn typeorm migration:create -n CreateUserTokens
 
 ## Emails em desenvolvimento
 4. Provider de envio de e-mail (DEV)
-- usando [ethereal](https://ethereal.email/)
-- dependecials
+- usando [nodemailer](https://nodemailer.com/) com [ethereal](https://ethereal.email/) em ambiente de dev
+  - dependecials
 ```sh
 yarn add nodemailer
 yarn add @types/nodemailer -D
+```
+
+## Template de emails
+- Criação de um novo provider para a criação de template
+- buscar por "node template engine"
+  - exemplos
+  - [exepress](https://expressjs.com/en/resources/template-engines.html)
+  - [handlebarsjs](https://handlebarsjs.com/)
+  - [nunjucks](https://mozilla.github.io/nunjucks/)
+- iremos usar o handlebars
+```sh
+yarn add handlebars
 ```
