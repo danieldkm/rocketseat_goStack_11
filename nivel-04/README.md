@@ -416,3 +416,26 @@ yarn jest --clearCache
 # Prestador de serviços
 
 ## Agenda do prestador
+
+## Configurando MongoDB
+Banco relacional temos controle sobre a 
+estrutura da tabela, versão, etc
+
+- **MongoDB**: Larga escala de dados, muitos dados entrando, saindo e pouco relacionamento
+  - ORMs;
+    - mongoose
+    - typeorm
+  - docker
+
+```sh
+docker run --name mongodb -p 27017:27017 -d -t mongo
+# if image exists
+docker start mongodb
+# string connectino on IDE
+mongodb://localhost:27017
+```
+```sh
+yarn add mongodb
+```
+
+## Estrutura de notificações
