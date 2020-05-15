@@ -452,3 +452,15 @@ yarn add @types/mongodb -D
 yarn add celebrate
 yarn add -D @types/hapi__joi
 ```
+
+## Variáveis ambiente
+- são informações que queremos na aplicação, tenham valores diferentes, baseado no ambiente que nossa aplicação esta rodando.
+  - quando estmos em ambiente de desenvolvimento o banco é diferente do ambiente de produção
+- libs
+```sh
+yarn add dotenv
+```
+- remover arquivo do controle de versão
+```sh
+git rm --cached ormconfig.json
+```
