@@ -528,3 +528,5 @@ yarn add -D @types/ioredis
 ```
 - Redis Gui / ide?
   - [redily](https://www.electronjs.org/apps/redily)
+
+## Cache lista de providers
