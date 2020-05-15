@@ -439,3 +439,4 @@ yarn add mongodb
 ```
 
 ## Estrutura de notificações
+## Enviando notificações
