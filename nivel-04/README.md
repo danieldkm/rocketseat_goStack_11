@@ -507,3 +507,24 @@ yarn add aws-sdk
 ```sh
 yarn add mime
 ```
+
+# Cache e segurança
+
+## Configurando cache
+- [elasticsearch](https://www.elastic.co/pt/elasticsearch/)
+- [elasticache](https://aws.amazon.com/pt/elasticache/)
+- [Redis](https://redis.io/)
+  - não tem tabelas
+  - trabalha com chave e valor
+  - docker
+```sh
+docker run --name redis -p 6379:6379 -d -t redis:alpine
+```
+  - driver/lib
+    - [ioredis](https://github.com/luin/ioredis)
+```sh
+yarn add ioredis
+yarn add -D @types/ioredis
+```
+- Redis Gui / ide?
+  - [redily](https://www.electronjs.org/apps/redily)
