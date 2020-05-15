@@ -464,3 +464,10 @@ yarn add dotenv
 ```sh
 git rm --cached ormconfig.json
 ```
+
+## Utilizando Class Transformer
+- ferramenta 
+- para controlar oque quer mostrar para o front 
+```sh
+yarn add class-transformer
+```
