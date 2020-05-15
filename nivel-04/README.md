@@ -495,3 +495,5 @@ yarn add aws-sdk
     - criar novo usuário: app-gobarber
     - adicionar a regra fullaccess do ses
     - anotar as credenciais
+
+## Organizando o container
