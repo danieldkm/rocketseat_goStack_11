@@ -401,3 +401,18 @@ yarn jest --clearCache
 ```
 
 ## Rotas e controllers
+<br>
+<br>
+<hr>
+
+<p align="center">
+  <h1 align="center">Finalizando back-end do app</h1>
+  <p align="center">
+    Nesse módulo finalizaremos nosso back-end incluindo as últimas funcionalidades do app e também aprendendo conceitos como MongoDB, variáveis ambiente, validação, cache, segurança, etc.
+    <br />
+  </p>
+</p>
+
+# Prestador de serviços
+
+## Agenda do prestador
