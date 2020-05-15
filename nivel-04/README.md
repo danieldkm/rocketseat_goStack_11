@@ -442,3 +442,13 @@ yarn add @types/mongodb -D
 ## Estrutura de notificações
 ## Enviando notificações
 ## Refatorando testes
+
+# Personalizando para produção
+
+## Validando dados
+
+- lib de validação "[celebrate](https://github.com/arb/celebrate)"
+```sh
+yarn add celebrate
+yarn add -D @types/hapi__joi
+```
