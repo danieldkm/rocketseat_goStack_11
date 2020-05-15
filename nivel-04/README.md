@@ -497,3 +497,13 @@ yarn add aws-sdk
     - anotar as credenciais
 
 ## Organizando o container
+
+## Upload de arquivos para o Amazon S3
+- CDN (Content Delivery Network)
+- servidor otimizado para performance
+- escala vertial: aumenta os recursos
+- escala horizontal: cria um novo servidor (distribuição de carga)
+- lib mime, to show image on the brownser with s3
+```sh
+yarn add mime
+```
