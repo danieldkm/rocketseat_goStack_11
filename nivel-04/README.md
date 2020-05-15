@@ -471,3 +471,27 @@ git rm --cached ormconfig.json
 ```sh
 yarn add class-transformer
 ```
+
+## Emails pelo Amazon SES
+- [Amazon SES](https://aws.amazon.com/pt/ses/)
+- mais barato que outros serviços
+- outros exemplos
+  - [sparkpost](https://www.sparkpost.com/)
+  - [mailgun](https://www.mailgun.com/)
+  - [mailchimp](https://mailchimp.com/)
+- comprar dominios 
+  - [Domains Google](https://domains.google/intl/pt-BR/)
+
+- Caso for enviar muitos e-mail tente não usar via smtp, use o **batch**, via api da aws
+
+- ses com [nodemailer](https://nodemailer.com/transports/ses/)
+
+```sh
+yarn add aws-sdk
+```
+- [Environment Variables To Configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+- [Using Credentials from Environment Variables](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_credentials_environment.html)
+  - serviço iam
+    - criar novo usuário: app-gobarber
+    - adicionar a regra fullaccess do ses
+    - anotar as credenciais
