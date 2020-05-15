@@ -436,7 +436,9 @@ mongodb://localhost:27017
 ```
 ```sh
 yarn add mongodb
+yarn add @types/mongodb -D
 ```
 
 ## Estrutura de notificações
 ## Enviando notificações
+## Refatorando testes
