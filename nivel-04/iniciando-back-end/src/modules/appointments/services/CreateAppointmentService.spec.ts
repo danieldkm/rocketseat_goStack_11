@@ -35,27 +35,6 @@ describe('CreateAppointment', () => {
     expect(appointment).toHaveProperty('id');
     expect(appointment.provider_id).toBe('123123123213');
   });
-  it('should not be able to create two appointment on the same time', async () => {
-    jest.spyOn(Date, 'now').mockImplementationOnce(() => {
-      return new Date(2020, 4, 10, 12).getTime();
-    });
-
-    const appointmentDate = new Date(2020, 4, 10, 13);
-
-    await createAppointment.execute({
-      date: appointmentDate,
-      user_id: '123123',
-      provider_id: '123123123213',
-    });
-
-    await expect(
-      createAppointment.execute({
-        date: appointmentDate,
-        user_id: '123123',
-        provider_id: '123123123213',
-      }),
-    ).rejects.toBeInstanceOf(AppError);
-  });
   it('should not be able to create an appointment on a past date', async () => {
     jest.spyOn(Date, 'now').mockImplementationOnce(() => {
       return new Date(2020, 4, 10, 12).getTime();
@@ -69,7 +48,7 @@ describe('CreateAppointment', () => {
       }),
     ).rejects.toBeInstanceOf(AppError);
   });
-  it('should not be able to create an appointment with samer user as provider', async () => {
+  it('should not be able to create an appointment with same user as provider', async () => {
     jest.spyOn(Date, 'now').mockImplementationOnce(() => {
       return new Date(2020, 4, 10, 12).getTime();
     });
@@ -100,6 +79,27 @@ describe('CreateAppointment', () => {
         date: new Date(2020, 4, 11, 18),
         user_id: 'user-id',
         provider_id: 'provider-id',
+      }),
+    ).rejects.toBeInstanceOf(AppError);
+  });
+  it('should not be able to create two appointment on the same time', async () => {
+    jest.spyOn(Date, 'now').mockImplementation(() => {
+      return new Date(2020, 4, 10, 12).getTime();
+    });
+
+    const appointmentDate = new Date(2020, 4, 10, 13);
+
+    await createAppointment.execute({
+      date: appointmentDate,
+      user_id: '123123',
+      provider_id: '123123123213',
+    });
+
+    await expect(
+      createAppointment.execute({
+        date: appointmentDate,
+        user_id: '122',
+        provider_id: '123123123213',
       }),
     ).rejects.toBeInstanceOf(AppError);
   });
