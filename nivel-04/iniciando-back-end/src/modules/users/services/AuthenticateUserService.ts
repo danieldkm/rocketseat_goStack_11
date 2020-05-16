@@ -38,15 +38,15 @@ export default class AuthenticateUserService {
       user.password,
     );
 
-    const { jwt } = auth;
+    const { secret, expiresIn } = auth.jwt;
 
     if (!passwordMatched) {
       throw new AppError('Incorrect email/password combination.', 401);
     }
 
-    const token = sign({}, jwt.secret, {
+    const token = sign({}, secret, {
       subject: user.id,
-      expiresIn: jwt.expiresIn,
+      expiresIn,
     });
 
     return {
