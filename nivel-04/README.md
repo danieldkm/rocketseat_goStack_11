@@ -530,3 +530,4 @@ yarn add -D @types/ioredis
   - [redily](https://www.electronjs.org/apps/redily)
 
 ## Cache lista de providers
+## Invalidando cache
