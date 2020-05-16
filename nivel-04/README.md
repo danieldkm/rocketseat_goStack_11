@@ -535,3 +535,11 @@ yarn add -D @types/ioredis
 - monitoramento de requisições
   - [datadoghq](https://www.datadoghq.com/)
 ## Refatorando testes
+## Express rate limit
+- brute force: tenta realizar varias requisições, tenta derrubar, etc
+- lib: [node-rate-limiter-flexible](https://github.com/animir/node-rate-limiter-flexible#readme)
+```sh
+yarn add rate-limiter-flexible
+yarn add redis
+yarn add -D @types/redis
+```
