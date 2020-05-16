@@ -531,3 +531,7 @@ yarn add -D @types/ioredis
 
 ## Cache lista de providers
 ## Invalidando cache
+## Cache de agendamentos
+- monitoramento de requisições
+  - [datadoghq](https://www.datadoghq.com/)
+## Refatorando testes
