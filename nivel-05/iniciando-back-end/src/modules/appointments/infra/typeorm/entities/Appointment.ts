@@ -10,6 +10,11 @@ import {
 
 import User from '@modules/users/infra/typeorm/entities/User';
 
+/**
+ * eager: sempre irá trazer o usuário
+ * lazy: carrega o usuario quando utiliza por exemplo "const user = await appointment.user"
+ * eager loading: 10 (user_id, user_id) mantem uma query para trazer os usuarios
+ */
 @Entity('appointments')
 class Appointment {
   @PrimaryGeneratedColumn('uuid')
