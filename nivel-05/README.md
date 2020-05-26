@@ -16,3 +16,4 @@
 - link [figma](https://www.figma.com/file/8VsqsD30wcdPCeM7LqjUxe/GoBarber-(Copy))
 
 ## Utilizando Query Params
+## Agendamentos no mesmo horário
