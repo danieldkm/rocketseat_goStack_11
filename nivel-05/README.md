@@ -24,3 +24,4 @@
 - **lazy**: carrega o usuario quando utiliza por exemplo "const user = await appointment.user"
 - **eager loading**: 10 (user_id, user_id) mantem uma query para trazer os usuarios
  
+## Serialização no cache
