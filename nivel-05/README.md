@@ -25,3 +25,5 @@
 - **eager loading**: 10 (user_id, user_id) mantem uma query para trazer os usuarios
  
 ## Serialização no cache
+
+# Recuperação de senha
