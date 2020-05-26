@@ -17,3 +17,4 @@
 
 ## Utilizando Query Params
 ## Agendamentos no mesmo horário
+## Dias indisponíveis no mês
