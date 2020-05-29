@@ -55,3 +55,4 @@ yarn add react-day-picker
 ```
 
 ## Disponibilidade do mês
+## Agendamentos da API
