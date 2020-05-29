@@ -53,3 +53,5 @@ const token = location.search.replace('?token=', '');
 ```sh
 yarn add react-day-picker
 ```
+
+## Disponibilidade do mês
