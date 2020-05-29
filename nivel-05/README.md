@@ -48,3 +48,8 @@ const token = location.search.replace('?token=', '');
 ## Criando Header
 ## Próximo agendamento
 ## Listagem de agendamentos
+## Calendário e estilizações
+- lib para montar calendario
+```sh
+yarn add react-day-picker
+```
