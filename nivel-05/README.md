@@ -35,3 +35,11 @@
 ## Criando página de redefinição
 - Confirmação de senha
   - https://til.hashrocket.com/posts/vahuw4phan-check-the-password-confirmation-with-yup
+
+## Implementando redefinição
+- obter query param da url/pagina/site
+```javascript
+import {  useHistory, useLocation } from 'react-router-dom';
+const location = useLocation();
+const token = location.search.replace('?token=', '');
+```
