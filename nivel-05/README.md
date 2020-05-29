@@ -31,3 +31,7 @@
 ## Criando página de recuperação
 
 ## Enviando formulário a API
+
+## Criando página de redefinição
+- Confirmação de senha
+  - https://til.hashrocket.com/posts/vahuw4phan-check-the-password-confirmation-with-yup
