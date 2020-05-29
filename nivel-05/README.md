@@ -43,3 +43,6 @@ import {  useHistory, useLocation } from 'react-router-dom';
 const location = useLocation();
 const token = location.search.replace('?token=', '');
 ```
+# Dashboard
+
+## Criando Header
