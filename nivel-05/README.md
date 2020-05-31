@@ -63,4 +63,4 @@ yarn add react-day-picker
 
 ## Página de perfil
 ## Troca de avatar
-
+## Alteração dos dados
