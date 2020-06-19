@@ -64,3 +64,24 @@ yarn add react-day-picker
 ## Página de perfil
 ## Troca de avatar
 ## Alteração dos dados
+
+
+
+<p align="center">
+  <h1 align="center">Finalizando front-end mobile do app</h1>
+  <p align="center">
+    Durante essas aulas, continuaremos o aplicativo mobile com React Native do GoBarber que será utilizado pelos clientes para agendar serviços com os prestadores.
+    <br />
+  </p>
+</p>
+
+# Ajustes na API
+## Introdução ao módulo
+## Lista de providers com serialização
+```sh
+# com o emulador aberto ou dispositivo conectado
+# para poder rodar a api como localhost
+adb reverse tcp:3333 tcp:3333
+```
+## Endereço das imagens
+## Criando páginas e rotas
