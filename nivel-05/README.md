@@ -94,3 +94,9 @@ adb reverse tcp:3333 tcp:3333
 # Agendamento
 ## Estrutura de criação
 ## Alternando entre providers
+## Criando Picker de data
+- lib para montar o calendario
+- [datetimepicker](https://github.com/react-native-community/datetimepicker)
+```sh
+yarn add @react-native-community/datetimepicker
+```
