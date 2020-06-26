@@ -101,3 +101,9 @@ adb reverse tcp:3333 tcp:3333
 yarn add @react-native-community/datetimepicker
 ```
 ## Buscando disponibilidade da API
+## Debugando app com Flipper
+- [Facebook Flipper](https://fbflipper.com/)
+- para encontrar um componente mais facil
+```javascript
+Header.displayName = 'DashboardHeader';
+```
