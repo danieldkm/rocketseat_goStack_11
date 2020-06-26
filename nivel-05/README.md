@@ -118,3 +118,11 @@ Header.displayName = 'DashboardHeader';
 # Perfil
 ## Criando tela de perfil
 ## Atualização dos dados
+## Atualização do avatar
+- lib para abir camera, buscar imagem do algum etc
+- [Image picker](https://github.com/react-native-community/react-native-image-picker)
+```sh
+yarn add react-native-image-picker
+```
+- lib para manipular a imagem 
+- [Image editor](https://github.com/react-native-community/react-native-image-editor)

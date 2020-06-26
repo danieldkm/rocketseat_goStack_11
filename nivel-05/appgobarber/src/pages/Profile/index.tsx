@@ -10,6 +10,7 @@ import {
 import { useNavigation } from '@react-navigation/native';
 import * as Yup from 'yup';
 import Icon from 'react-native-vector-icons/Feather';
+import ImagePicker from 'react-native-image-picker';
 
 import { FormHandles } from '@unform/core';
 import { Form } from '@unform/mobile';
@@ -47,6 +48,48 @@ const Profile: React.FC = () => {
   const oldPasswordInputRef = useRef<TextInput>(null);
   const passwordInputRef = useRef<TextInput>(null);
   const confirmPasswordInputRef = useRef<TextInput>(null);
+
+  const handleUpdateAvatar = useCallback(() => {
+    ImagePicker.showImagePicker(
+      {
+        title: 'Selecione um avatar',
+        cancelButtonTitle: 'Cancelar',
+        takePhotoButtonTitle: 'Usar câmera',
+        chooseFromLibraryButtonTitle: 'Escolher da galeria',
+      },
+      async (response) => {
+        if (response.didCancel) {
+          // console.log('User cancelled image picker');
+          return;
+        }
+        if (response.error) {
+          // console.log('ImagePicker Error: ', response.error);
+          Alert.alert(`Erro ao atualizar seu avatar. ${response.error}`);
+          return;
+        }
+
+        // console.log('response.uri', response, `file:/${response.path}`);
+
+        const data = new FormData();
+
+        data.append('avatar', {
+          type: 'image/jpeg',
+          name: `${user.id}.jpg`,
+          uri: response.uri, // `file://${response.path}`,
+        });
+
+        await api
+          .patch('/users/avatar', data)
+          .then((apiResponse) => {
+            console.log('new.avatar', apiResponse.data);
+            updateUser(apiResponse.data);
+          })
+          .catch((e) => {
+            console.log('erro.avatar', e);
+          });
+      },
+    );
+  }, [updateUser, user.id]);
 
   const handleGoBack = useCallback(() => {
     navigation.goBack();
@@ -133,7 +176,7 @@ const Profile: React.FC = () => {
           contentContainerStyle={{ flex: 1 }}
         >
           <Container>
-            <UserAvatarButton onPress={() => {}}>
+            <UserAvatarButton onPress={handleUpdateAvatar}>
               <BackButton onPress={handleGoBack}>
                 <Icon name="chevron-left" size={24} color="#999591" />
               </BackButton>
