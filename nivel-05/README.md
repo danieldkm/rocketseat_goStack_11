@@ -110,3 +110,6 @@ Header.displayName = 'DashboardHeader';
 ## Disponibilidade por período
 ## Mostrando horários em tela
 ## Criação do agendamento
+
+# Sucesso
+## Criando estrutura da tela
