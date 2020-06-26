@@ -4,9 +4,11 @@ import { Platform } from 'react-native';
 export const Container = styled.View`
   flex: 1;
   justify-content: center;
-  padding: 0 30px ${Platform.OS === 'android' ? 150 : 40}px;
+  padding: 0 30px ${Platform.OS === 'android' ? 0 : 40}px;
   position: relative;
 `;
+
+export const HeaderProfile = styled.View``;
 
 export const Title = styled.Text`
   font-size: 20px;
@@ -17,7 +19,11 @@ export const Title = styled.Text`
 
 export const BackButton = styled.TouchableOpacity`
   /* margin-top: 40px; for iphone */
-  margin-top: 284px;
+  position: absolute;
+  /* margin-top: ${Platform.OS === 'android' ? 40 : 40}px; */
+  /* left: 24px;*/
+  top: 34px;
+  /* margin-top: 20px; */
 `;
 
 export const UserAvatarButton = styled.TouchableOpacity`
