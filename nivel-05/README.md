@@ -107,3 +107,4 @@ yarn add @react-native-community/datetimepicker
 ```javascript
 Header.displayName = 'DashboardHeader';
 ```
+## Disponibilidade por período
