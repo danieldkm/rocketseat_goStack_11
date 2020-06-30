@@ -156,3 +156,19 @@ yarn add react-native-image-picker
 - jest.mock -> substitui qualquer import
 - jest.fn() -> função qualquer.
 - React.ReactNode -> qualquer conteudo que um componente react poderia receber.
+
+## Gerando coverage report
+- adicionar configuração do coverage no `package.json`
+```json
+"jest": {
+  "collectCoverageFrom": [
+    "src/pages/**/*.tsx",
+    "src/components/**/*.tsx",
+    "src/hooks/*.tsx",
+    "!src/hooks/index.tsx"
+  ]
+}
+```
+- `yarn test --coverage --watchAll false`
+  - `--coverage` : gera relatorio de cobertura
+  - `--watchAll` : nao ficar observando qualquer alteracao
