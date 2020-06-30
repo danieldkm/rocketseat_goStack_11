@@ -150,3 +150,9 @@ yarn add react-native-image-picker
     - ja vem instalado no reactjs por padrao no scafolds.
   - [react hooks testing library](https://react-hooks-testing-library.com/)
   - [react native testing library](https://github.com/callstack/react-native-testing-library)
+
+## Criando primeiro teste do zero
+- adicionar no `env` do eslint.json `"jest": true`
+- jest.mock -> substitui qualquer import
+- jest.fn() -> função qualquer.
+- React.ReactNode -> qualquer conteudo que um componente react poderia receber.
