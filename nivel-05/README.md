@@ -126,3 +126,27 @@ yarn add react-native-image-picker
 ```
 - lib para manipular a imagem 
 - [Image editor](https://github.com/react-native-community/react-native-image-editor)
+
+
+<p align="center">
+  <h1 align="center">Testes no ReactJS</h1>
+  <p align="center">
+    Nesse módulo, conheceremos as principais ferramentas do ecossistema do React para testar nossas aplicações a fim de garantir que o usuário tenha a mesma experiência com a parte visual da aplicação independente de quantas funcionalidades sejam adicionadas.
+    <br />
+  </p>
+</p>
+
+# Ambiente de testes
+
+## Configurando ambiente do Jest
+
+- end to end
+- nem sempre é fazer TDD
+- o que deve ser testado
+  - testar arquivos que possam conter regras de negocio.
+
+- libs
+  - [testing library react](https://testing-library.com/docs/react-testing-library/intro)
+    - ja vem instalado no reactjs por padrao no scafolds.
+  - [react hooks testing library](https://react-hooks-testing-library.com/)
+  - [react native testing library](https://github.com/callstack/react-native-testing-library)
