@@ -172,3 +172,7 @@ yarn add react-native-image-picker
 - `yarn test --coverage --watchAll false`
   - `--coverage` : gera relatorio de cobertura
   - `--watchAll` : nao ficar observando qualquer alteracao
+
+# Testando autenticação
+## Teste de login
+- fireEvent : simular um evento/interação que o usuário teria com a tela.
