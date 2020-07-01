@@ -176,3 +176,5 @@ yarn add react-native-image-picker
 # Testando autenticação
 ## Teste de login
 - fireEvent : simular um evento/interação que o usuário teria com a tela.
+
+# Mock do hook de autenticação
