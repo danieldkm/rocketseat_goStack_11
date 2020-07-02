@@ -179,3 +179,10 @@ yarn add react-native-image-picker
 
 ## Mock do hook de autenticação
 ## Finalizando testes no login
+
+# Testando hooks
+## Iniciando testes dos hooks
+```sh
+yarn add @testing-library/react-hooks -D
+yarn add react-test-renderer -D
+```
