@@ -186,3 +186,8 @@ yarn add react-native-image-picker
 yarn add @testing-library/react-hooks -D
 yarn add react-test-renderer -D
 ```
+
+## Criando mock da API
+```sh
+yarn add axios-mock-adapter -D
+```
