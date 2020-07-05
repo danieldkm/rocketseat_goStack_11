@@ -193,3 +193,46 @@ yarn add axios-mock-adapter -D
 ```
 
 ## Finalizando testes do hook
+
+# Testes no React Native
+## Configurando ambiente
+- lib [React Native Testing Library](https://github.com/callstack/react-native-testing-library)
+```sh
+yarn add --dev react-native-testing-library
+# Additional Jest matchers
+yarn add --dev @testing-library/jest-native
+```
+
+- dentro do package.json adicionar o codigo, onde ficar o config do jest
+```json
+"setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"]
+```
+
+- lidar com async-storage no react-native
+- [docs](https://react-native-community.github.io/async-storage/docs/advanced/jest/)
+- escolha do Diego "With Jest setup file"
+  - criar um arquivo no src "setupTests.ts"
+  - adicionar nova config no jest no package.json
+
+
+```javascript
+// dentro do setupTests.ts
+import mockAsyncStorage from '@react-native-community/async-storage/jest/async-storage-mock';
+
+jest.mock('@react-native-community/async-storage', () => mockAsyncStorage);
+```
+```json 
+// no package.json
+  "setupFiles": ["./src/setupTests.ts"]
+```
+
+- lidando com [React native gesture handler](https://docs.swmansion.com/react-native-gesture-handler/docs/getting-started.html)
+- add no package.json
+```json
+"setupFiles": ["./node_modules/react-native-gesture-handler/jestSetup.js"]
+```
+
+```sh
+yarn test --watchAll true
+yarn test --coverage
+```
