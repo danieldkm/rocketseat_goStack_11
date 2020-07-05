@@ -16,9 +16,9 @@ interface ToastProps {
 }
 
 const icons = {
-  info: <FiInfo size={24} />,
-  error: <FiAlertCircle size={24} />,
-  success: <FiCheckCircle size={24} />,
+  info: <FiInfo size={24} data-testid="toast-info-icon" />,
+  error: <FiAlertCircle size={24} data-testid="toast-error-icon" />,
+  success: <FiCheckCircle size={24} data-testid="toast-success-icon" />,
 };
 
 const Toast: React.FC<ToastProps> = ({ message, style }) => {
@@ -37,8 +37,9 @@ const Toast: React.FC<ToastProps> = ({ message, style }) => {
   return (
     <Container
       type={message.type}
-      hasDescription={Number(!!message.description)}
+      hasdescription={Number(!!message.description)}
       style={style}
+      data-testid="toast-container"
     >
       {icons[message.type || 'info']}
       <div>
@@ -46,7 +47,11 @@ const Toast: React.FC<ToastProps> = ({ message, style }) => {
         {message.description && <p>{message.description}</p>}
       </div>
 
-      <button onClick={() => removeToast(message.id)} type="button">
+      <button
+        onClick={() => removeToast(message.id)}
+        type="button"
+        data-testid="toast-button"
+      >
         <FiXCircle size={18} />
       </button>
     </Container>
