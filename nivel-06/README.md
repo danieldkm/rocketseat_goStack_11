@@ -91,11 +91,33 @@ yarn add @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-type
   - removendo
     - `sudo apt purge yarn`
     - `sudo apt autoremove`
-  - acessar [yarnpkg](https://classic.yarnpkg.com/lang/en/) classic
+  - acessar [yarnpkg](https://classic.yarnpkg.com/lang/en/) classic, para o ubuntu
     - ```sh
       curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 
       echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
-      sudo apt update && sudo apt install --no-install-recommends yarn
-    ```
+      sudo apt update && sudo apt install --no-install-recommends yarn```
+
+## Clone da aplicação
+- **esses passos apenas serve para realizar um deploy inicial**
+- acessar o servidor
+- rodar o comando `ssh-keygen`, não precisa informar senha
+- `cd ~/.ssh`
+- `cat id_rsa.pub`
+- copiar o retorno
+- exemplo
+
+```sh
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdaaFHoxPxK/tRITtdscY58oYZA/QdkzYN7uXahV/8qY6bmlXPaOGTDrURsYgiNWTRzTnVsJUhklY8Oxjdrl1nOTEczCeyZ70QpjozEllM2HSjQTTMNgclciWQxhiqtqzilv/3oi0eOBio9508pBz/lYzb4ZJswEW+PSzSrSsoX2beXES81hDR/nF1fQrKGFQsVMFJFyilncEjQv0w6lTdY+jVDgX9k7Wa3tfpI3g5E9sCI5q/siw4c/GSeAyFq0UH3FydXP3L8T5HYJYT9sw05yKQk7G5KWHSuSqItuNAvRLSfV/KiFd1eVXQdNkW2B+sGw2iWzohymliLu+mlhcz deploy@node-deploy
+
+```
+- no github, acessar seu perfil -> Settings
+- acessar **SSH and GPG keys**
+- **New SSH key**, colar o retorno do .pub, dar um nome apropriado **Add SSH key**.
+- clone seu repositorio com **ssh**
+- exemplo: `git@github.com:danieldkm/node-deploy.git`
+- criar uma pasta na home do seu usuario, ex: `mkdir app`
+- acessar o projeto e rodar `yarn` para instalar as dependencias
+- `yarn cache dir` apenas para mostrar onde fica o diretorio de cache do yarn, `yarn cache clean`
+- `yarn build`, validar se gera o build
