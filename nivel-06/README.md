@@ -60,3 +60,42 @@ yarn add @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-type
       
 # Deploy da aplicação
 ## Configurando o servidor
+- acessar o servidor
+- atualizar os pacotes
+  - rodar o comando `apt update` or `apt-get update`
+- instalar os novos pacotes
+  - rodar o comando `apt upgrade` or `apt-get upgrade`
+- parar de usar o root 
+- criar novo usuario
+  - rodar o comando `adduser username`
+  - dar permissão de sudo ao usuario `usermod -aG sudo username`
+- acessar a home do usuario
+  - criar pasta `mkdir .ssh`, para configurar a chave ssh
+  - caso as permissões estiver para root `chown deploy:deploy .ssh`
+  - copiar os arquivos ssh do root `cp ~/.ssh/authorized_keys /home/deploy/.ssh/`
+  - trocar permissões `chown deploy:deploy authorized_keys`
+
+- instalar o node no servidor
+  - acessar o site do [nodejs](https://nodejs.org/en/)
+  - [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/)
+    - Debian and Ubuntu based Linux distributions, Enterprise Linux/Fedora and Snap packages
+      - [Node.js binary distributions](https://github.com/nodesource/distributions/blob/master/README.md)
+        ```sh
+          # Using Ubuntu
+          curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+          sudo apt-get install -y nodejs
+        ```
+- instalar o yarn
+- jeito errado 
+  - `sudo apt install yarn`
+  - removendo
+    - `sudo apt purge yarn`
+    - `sudo apt autoremove`
+  - acessar [yarnpkg](https://classic.yarnpkg.com/lang/en/) classic
+    - ```sh
+      curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+
+      echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+      sudo apt update && sudo apt install --no-install-recommends yarn
+    ```
