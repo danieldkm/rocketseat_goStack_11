@@ -29,3 +29,34 @@ yarn add @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-type
 - criar repositorio no github
 - adicinar o link no remote do git
 - comitar todo o codigo e enviar para o github
+
+## Criando servidor Linux
+- criar novo servidor no digital ocean
+- Create Droplets (servidor)
+- aba Marketplace
+  - Selecionar Docker
+- Choose a plan
+  - Stater Basic
+  - de $5
+- Choose a datacenter region
+  - New York ou San Francisco
+- Authentication (preferencia para SSH Keys)
+  - SSH keys
+    - linux/mac : ssh-keygen
+    - windows : https://docs.github.com/en/github/authenticating-to-github/checking-for-existing-ssh-keys
+  - new SSH Key
+    - copiar o conteudo da chave .pub
+    - dar um nome qualquer
+- Choose a hostname
+  - informar o nome do projeto/aplicação
+- Acessar o servidor via ssh
+  - linux: ssh root@ip
+  - windows: com "Git bash" ssh root@ip
+    - via putty: 
+      - usar PuttyGen
+      - importar a chave criada
+      - salvar novo ppk
+      - no Putty SSH->auth->selecionar arquivo gerado
+      
+# Deploy da aplicação
+## Configurando o servidor
