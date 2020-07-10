@@ -24,3 +24,8 @@
 yarn add @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-typescript babel-plugin-module-resolver babel-plugin-transform-typescript-metadata @babel/plugin-proposal-decorators @babel/plugin-proposal-class-properties -D
 ```
 - criar arquivo na raiz, *babel.config.js*
+
+## Repositório no Github
+- criar repositorio no github
+- adicinar o link no remote do git
+- comitar todo o codigo e enviar para o github
